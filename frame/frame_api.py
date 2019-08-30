@@ -7,7 +7,7 @@ class NoteSerialiser(serializers.HyperlinkedModelSerializer):
 
     class Meta:
         model = bankData
-        fields = ('IFSC', 'bank_id', 'branch', 'address', 'city', 'district','state','bank_name')
+        fields = ('IFSC', 'bank_id', 'address', 'city', 'district','state','bank_name')
 
 
 class NoteViewSet(viewsets.ModelViewSet):
